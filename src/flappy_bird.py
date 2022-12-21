@@ -3,7 +3,7 @@
 """
 from itertools import cycle
 from numpy.random import randint
-from pygame import Rect, init, time, display, font, Surface
+from pygame import Rect, init, time, display, font, Surface, quit
 from pygame.event import pump
 from pygame.image import load
 from pygame.surfarray import array3d, pixels_alpha
@@ -154,7 +154,7 @@ class FlappyBird(object):
                 self.score += 1
                 # update text with score
                 self.text = self.fb_font.render(str(self.score), True, (255, 255, 255))
-                reward = 0.5
+                reward += 0.5
                 break
 
         if self.fireball["x"] < bird_center_x < self.fireball["x"] + self.fireball_width and self.fireball["rewarded"] == False:
@@ -218,3 +218,13 @@ class FlappyBird(object):
         display.update()
         self.fps_clock.tick(self.fps)
         return image, reward, terminal
+
+    def end_game(self):
+        display.quit()
+
+    def init_game(self):
+        init()
+        screen_width = 288
+        screen_height = 512
+        display.set_mode((screen_width, screen_height))
+        self.__init__()
