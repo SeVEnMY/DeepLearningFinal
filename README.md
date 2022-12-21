@@ -15,6 +15,8 @@ To run the code in this repository, you will need the following software and lib
 - PyTorch 1.7 or higher
 - TensorBoardX 2.0 or higher
 
+we have provided a freeze of environment as requirements.txt
+
 ## Training and Testing the Model
 
 To train the model, open the `RL_flappy_bird.ipynb` notebook in a Jupyter environment and run all the cells before the subtitle "Test Procedure:". This will train the model and save it to the `models/` directory.
