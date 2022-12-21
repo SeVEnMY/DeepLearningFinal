@@ -1,6 +1,10 @@
 # Playing Modified Flappy Bird Using Reinforcement Learning
 
-This repository contains the code and documentation for a project on using deep reinforcement learning to play a modified version of the popular mobile game Flappy Bird. The modifications to the game include the addition of fireballs that fly across the screen and the widening of the gap between the pipes.
+This repository contains the code and documentation for a project on using deep reinforcement learning to play a modified version of the popular mobile game Flappy Bird. The modifications to the game include the addition of fireballs that fly across the screen and the widening of the gap between the pipes. Below is a simple demo of the result: 
+<p align="center">
+  <img src="demo/ProjDemo.gif" width=600><br/>
+  <i>Result</i>
+</p>
 
 The Flappy Bird Pygame file used in this project was adapted from the repository "Flappy-bird-deep-Q-learning-pytorch" (https://github.com/uvipen/Flappy-bird-deep-Q-learning-pytorch). We would like to acknowledge and thank the author for sharing this resource.
 
