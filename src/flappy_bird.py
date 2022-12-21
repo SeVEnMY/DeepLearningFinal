@@ -53,7 +53,7 @@ class FlappyBird(object):
 
     bird_index_generator = cycle([0, 1, 2, 1])
 
-    def __init__(self, fps=200):
+    def __init__(self, fps=30):
         self.fps = fps
         self.text = self.fb_font.render('0', True, (255, 255, 255))
         self.text_rect = self.text.get_rect(center=(self.screen_width / 2, self.screen_height * 0.1))
@@ -196,7 +196,8 @@ class FlappyBird(object):
             self.fireball = self.generate_fireball()
 
         if self.is_collided():
-            print("Current FPS: ", self.fps_clock.get_fps())
+            # print("Current FPS: ", self.fps_clock.get_fps())
+            print(self.score)
             terminal = True
             reward = -1
             self.__init__()
