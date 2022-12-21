@@ -2,7 +2,7 @@
 
 This repository contains the code and documentation for a project on using deep reinforcement learning to play a modified version of the popular mobile game Flappy Bird. The modifications to the game include the addition of fireballs that fly across the screen and the widening of the gap between the pipes. Below is a simple demo of the result: 
 <p align="center">
-  <img src="demo/ProjDemo.gif" width=600><br/>
+  <img src="Demo/ProjDemo.gif" width=600><br/>
   <i>Result</i>
 </p>
 
